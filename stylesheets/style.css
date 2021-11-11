@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Création d'un conteneur adaptatif */
+.container {
+    border: 2px solid pink;
+    width: 400px;
+    margin: 20px auto;
+}
+
+/* Création d'un conteneur fluide */
+.fluid_container {
+    width: 20%;
+    margin: 30px auto;
+}
+
+/* Création d'une classe "line" pour donner le flex aux colonnes à l'intérieur */
+.line {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Couleur de fond */
+.red {
+    background-color: red;
+    min-height: 20px;
+}
+
+.blue {
+    background-color: blue;
+    min-height: 20px;
+}
+
+.black{
+    background: black;
+    min-height: 20px;
+}
+
+.yellow{
+    background: gold;
+    min-height: 20px;
+}
+
+.maroon{
+    background: brown;
+    min-height: 20px;
+}
+
+
+/* Media queries */
+
+/* Media query pour téléphone en mode paysage avec largeur 576px et plus */
+@media (min-width: 576px){
+    .container {
+        width: 530px;
+    }
+}
+
+/* Media query pour tablettes avec largeur 768px et plus */
+@media (min-width: 768px){
+    .container {
+        width: 720px;
+    }
+    .column {
+        width: 50%;
+    }
+}
+
+/* Media query pour desktop avec largeur 992px et plus */
+@media (min-width: 992px){
+    .container {
+        width: 960px;
+    }
+
+    /* Création de mes classes de colonne */
+    /* Alternative : .col-1 {(100% / 12) * 1 }*/
+    .col-1 { width: 8.333333%;}
+    .col-2 { width: 16.666666%; }
+    .col-3 { width: 25%; }
+    .col-4 { width: 33.333333%; }
+    .col-5 { width: 41.6%; }
+    .col-6 { width: 50%; }
+    .col-7 { width: 58.333333%; }
+    .col-8 { width: 66.666666%; }
+    .col-9 { width: 75%; }
+    .col-10 { width: 83.333333%; }
+    .col-11 { width: 91.6666666%; }
+    .col-12 { width: 100%; }
+
+
+    /* Marges */
+    .marge-1 { margin-left: 8.333333%; }
+    .marge-2 { margin-left: 16.666666%; }
+    .marge-3 { margin-left: 25%; }
+    .marge-4 { margin-left: 33.333333%; }
+    .marge-5 { margin-left: 41.6%; }
+    .marge-6 { margin-left: 50%; }
+    .marge-7 { margin-left: 58.333333%; }
+    .marge-8 { margin-left: 66.666666; }
+    .marge-9 { margin-left: 75%; }
+    .marge-10 { margin-left: 83.333333%; }
+    .marge-12 { margin-left: 91.6666666%; }
+
+    }
+
+/* Media query pour desktop avec largeur 1200px et plus */
+@media (min-width: 1200px) {
+    .container {
+        width: 1140px;
+    }
+    .column {
+        width: 25%;
+    }
+}
